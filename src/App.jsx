@@ -13,11 +13,16 @@ import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo="#10 - Comunicacao Indireta " color="#78BC61">
+                <IndiretaPai></IndiretaPai>
+            </Card>
 
             <Card titulo="#09 - Comunicacao Direta " color="#0B7189">
                 <DiretaPai></DiretaPai>
