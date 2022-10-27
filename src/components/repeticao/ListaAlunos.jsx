@@ -6,14 +6,14 @@ export default props => {
     const alunosLI = alunos.map((aluno) => {
         return (
             <li key={aluno.id}>
-                {alunos.id} {alunos.nome} {'->'} {alunos.nota}
+                {aluno.id}) {aluno.nome} {'->'} {aluno.nota}
             </li>
         );
     });
 
     return (
         <div>
-            <ul>
+            <ul style={{ listStyle: "none" }}>
                 {alunosLI}
             </ul>
         </div>
