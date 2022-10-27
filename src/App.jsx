@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import Input from './components/formulario/Input'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
@@ -19,6 +20,10 @@ export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo="#11 - Componente Controlado " color="#FFF689">
+                <Input></Input>
+            </Card>
 
             <Card titulo="#10 - Comunicacao Indireta " color="#78BC61">
                 <IndiretaPai></IndiretaPai>
