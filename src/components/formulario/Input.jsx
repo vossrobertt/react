@@ -6,12 +6,20 @@ export default props => {
     const [valor, setValor] = useState('Inicial')
 
     function quandoMudar(e) {
-        console.log(e)
+        setValor(e.target.value)
     }
 
     return (
         <div className="Input">
-           <input value={valor} onChange={} />
+            <h2>{valor}</h2>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column'
+            }}>
+                <input value={valor} onChange={quandoMudar} />
+                <input value={valor} readOnly />
+                <input value={undefined} />
+            </div>
         </div>
     )
 }
