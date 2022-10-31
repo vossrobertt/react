@@ -16,11 +16,16 @@ import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Mega from './components/mega/Mega'
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo="#13 - MegaSena " color="#182747">
+                <center><Mega qtde={8} /></center>
+            </Card>
 
             <Card titulo="#12 - Contador " color="#CF0A0A">
                 <center><Contador numeroInicial={10}></Contador></center>
